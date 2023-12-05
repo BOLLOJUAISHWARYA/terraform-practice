@@ -29,3 +29,8 @@ variable "test1" {}
 output "test" {
   value = var.test1
 }
+
+variable "env" {}
+output "env" {
+  value = var.env
+}
