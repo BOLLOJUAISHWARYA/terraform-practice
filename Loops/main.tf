@@ -27,3 +27,7 @@ variable "instances1" {
     }
   }
 }
+
+resource "null_resource" "samp" {
+  for_each = var.instances1
+}
