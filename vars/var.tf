@@ -11,5 +11,16 @@ variable "fruits" {
 }
 
 output "fruit" {
-  value =var.fruits
+  value =var.fruits[1]
+}
+
+variable "fruits_with_quantity" {
+  default = {
+    apple = 10
+    banana =12
+  }
+}
+
+output "fruits_and_quantity" {
+  value=var.fruits_with_quantity["apple"]
 }
